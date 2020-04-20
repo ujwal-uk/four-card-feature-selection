@@ -1,0 +1,127 @@
+
+		@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
+		
+
+		body {
+			font-family:Poppins;
+			font-size: 15px;
+			background-color: hsl(0, 0%, 98%);
+		}
+
+		.attribution { font-size: 11px; text-align: center; }
+  		.attribution a { color: hsl(228, 45%, 44%); }
+
+		.grid-c{
+			display: grid;
+			grid-template-columns: 1fr repeat(3,3fr) 1fr;
+			grid-template-rows: 170px 15px repeat(4,90px) 10px 10px;
+			grid-gap:30px 30px;
+			grid-template-areas: " header header header header header" ". . . . ." ". . b1 . ." ". b2 b1 b3 ." ". b2 b4 b3 ." ". . b4 . ." " f f f f f" ". . . . .";
+		}
+		footer{
+			grid-area:f;
+
+		}
+		.box1{
+			grid-area:header;
+		}
+		.box2{
+			grid-area:b1;
+    		box-shadow: 0px -5px 0px 0px hsl(0, 78%, 62%),0px 3px 8px 0px slategrey;
+			
+		}		
+		.box3{
+			grid-area:b2;
+    		box-shadow: 0px -5px 0px 0px hsl(180, 62%, 55%),0px 3px 8px 0px slategrey;
+			
+		}
+		.box4{
+			grid-area:b3;
+    		box-shadow: 0px -5px 0px 0px hsl(212, 86%, 64%),0px 3px 8px 0px slategrey;
+			
+			
+		}	
+		.box5{
+			grid-area:b4;
+    		box-shadow: 0px -5px 0px 0px hsl(34, 97%, 64%),0px 3px 8px 0px slategrey;
+			
+		}		
+
+	    .card {
+	    	background-color: white;
+      	border-radius:6px;
+      	padding: 5% 1% 14% 10%;
+      	padding-right: 5%;
+   	}
+
+ 	   .card-body {
+	    	font-size: 13px;
+   	 	color:darkgray;
+      	padding-right: 15%;
+
+   	}
+
+   	.card-heading{
+   		padding-top:2%;
+    		font-size: 20px;
+    		font-weight:bold;
+    		color:hsl(234, 12%, 34%);
+   	}
+		img{
+    		margin-left:75%;
+    		margin-top:5%;
+    		max-width:100%;
+    		height:auto;
+    		object-fit:cover;
+    	}
+	
+	#body-head{
+    margin:3px;
+    margin-top:55px;
+    font-size: 28px;
+    font-weight:200;
+    color:hsl(234, 12%, 34%);
+   }
+
+   
+   #body-subhead{
+    margin:3px;
+    font-size: 28px;
+    font-weight:600;
+    color: hsl(234, 12%, 34%);
+    }
+    
+   #body-content{
+    margin:3px;
+    font-size: 14px;
+    color:hsl(229, 6%, 66%);
+    padding-left: 	30%;
+    padding-right: 	30%;
+    }
+
+    #body{
+      text-align: center;
+    }
+
+	
+@media (max-width:600px){
+
+	.grid-c{
+			display: grid;
+			grid-template-columns: 5% 1fr 5% ;
+			grid-template-rows: repeat(5,210px) 10px 8px;
+			grid-gap:30px 30px;
+			grid-template-areas: " . header . " " . b1 . " " . b2 . " " . b3 . " " . b4 . " "f f f " ". . .";
+		}
+			
+	#body-head{
+    margin:3px;
+    margin-top:40px;
+	}
+	#body-content{
+    padding-left: 	16%;
+    padding-right: 	16%;
+	}
+}
+
+
