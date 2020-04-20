@@ -14,7 +14,7 @@
 		.grid-c{
 			display: grid;
 			grid-template-columns: 1fr repeat(3,3fr) 1fr;
-			grid-template-rows: 170px 15px repeat(4,90px) 10px 10px;
+			grid-template-rows: 170px 15px repeat(4,90px) 5px 1px;
 			grid-gap:30px 30px;
 			grid-template-areas: " header header header header header" ". . . . ." ". . b1 . ." ". b2 b1 b3 ." ". b2 b4 b3 ." ". . b4 . ." " f f f f f" ". . . . .";
 		}
@@ -78,7 +78,7 @@
 	#body-head{
     margin:3px;
     margin-top:55px;
-    font-size: 28px;
+    font-size: 32px;
     font-weight:200;
     color:hsl(234, 12%, 34%);
    }
@@ -86,14 +86,14 @@
    
    #body-subhead{
     margin:3px;
-    font-size: 28px;
+    font-size: 32px;
     font-weight:600;
     color: hsl(234, 12%, 34%);
     }
     
    #body-content{
     margin:3px;
-    font-size: 14px;
+    font-size: 15px;
     color:hsl(229, 6%, 66%);
     padding-left: 	30%;
     padding-right: 	30%;
